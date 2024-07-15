@@ -61,7 +61,7 @@ public class Principal {
                 .sorted(Comparator.comparing(Dados::codigo))
                 .forEach(System.out::println);
 
-        System.out.println("\n Digite um trecho do nome do carro a ser buscado: ");
+        System.out.println("\n Digite um trecho do modelo do veículo a ser buscado: ");
         var nomeVeiculo = leitura.nextLine();
 
         List<Dados> modelosFiltrados = modeloLista.modelos().stream()
@@ -71,7 +71,7 @@ public class Principal {
         System.out.println("\nModelos filtrados: ");
         modelosFiltrados.forEach(System.out::println);
 
-        System.out.println("\n Digite o código do modelo para buscar os valores de avaliação: ");
+        System.out.println("\nDigite o código do modelo para buscar os valores de avaliação: ");
         var codigoModelo = leitura.nextLine();
 
         endereco = endereco + "/" + codigoModelo + "/anos";
@@ -85,7 +85,7 @@ public class Principal {
             Veiculo veiculo = conversor.obterDados(json, Veiculo.class);
             veiculos.add(veiculo);
         }
-        System.out.println("\nTodos os veículos filtrados com avaliações por ano");
+        System.out.println("\nTodos os veículos filtrados com avaliações por ano: ");
         veiculos.forEach(System.out::println);
 
     }
