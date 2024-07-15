@@ -61,7 +61,7 @@ public class Principal {
                 .sorted(Comparator.comparing(Dados::codigo))
                 .forEach(System.out::println);
 
-        System.out.println("\n Digite um trecho do modelo do veículo a ser buscado: ");
+        System.out.println("\nDigite um trecho do modelo do veículo a ser buscado: ");
         var nomeVeiculo = leitura.nextLine();
 
         List<Dados> modelosFiltrados = modeloLista.modelos().stream()
