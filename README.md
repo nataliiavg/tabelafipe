@@ -10,3 +10,8 @@
 - Por fim, é exibida a avaliação apenas daquele ano escolhido.
 
 
+<p align="center">
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO%20&color=GREEN&style=for-the-badge"/>
+</p>
+
+
